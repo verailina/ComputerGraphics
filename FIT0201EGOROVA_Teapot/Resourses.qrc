@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/BPT_Files">
+        <file>teapot.txt</file>
+        <file>teaspoon.txt</file>
+        <file>teacup.txt</file>
+        <file>heart.txt</file>
+        <file>sphere.txt</file>
+    </qresource>
+</RCC>

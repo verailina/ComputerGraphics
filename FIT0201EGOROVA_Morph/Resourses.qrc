@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/textures">
+        <file>morph_src1024.png</file>
+    </qresource>
+</RCC>
