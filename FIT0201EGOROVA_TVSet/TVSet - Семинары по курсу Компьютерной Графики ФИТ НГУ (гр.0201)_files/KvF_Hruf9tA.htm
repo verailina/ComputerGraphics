@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.youtube.com/embed/KvF_Hruf9tA?rel=0&wmode=opaque -->
+<html lang="ru" dir="ltr" data-cast-api-enabled="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script id="js-2745497654" src="p9NP-eAlPFnIwCXQTIVv825QGiGzgBLP56m5NwS9QPk.js" data-loaded="true"></script><title>Through the Looking Glass: The Tech Behind Alice - YouTube</title><link rel="canonical" href="http://www.youtube.com/watch?v=KvF_Hruf9tA">  <link rel="stylesheet" href="https://s.ytimg.com/yts/cssbin/www-embed-player-2x-webp-vflK5eEej.css" name="www-embed-player">
+<script>var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},span: {},info: {}});},tick: function(l, t, n) {ytcsi.gt(n).tick[l] = t || +new Date();},span: function(l, s, n) {ytcsi.gt(n).span[l] = (typeof s == 'number') ? s :+new Date() - ytcsi.data_.tick[l];},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;}};(function() {var perf = window['performance'] || window['mozPerformance'] ||window['msPerformance'] || window['webkitPerformance'];ytcsi.tick('_start', perf ? perf['timing']['responseStart'] : null);})();if (document.webkitVisibilityState == 'prerender') {ytcsi.info('prerender', 1);document.addEventListener('webkitvisibilitychange', function() {ytcsi.tick('_start');}, false);}try {ytcsi.pt_ = (window.chrome && chrome.csi().pageT ||window.gtbExternal && gtbExternal.pageT() ||window.external && external.pageT);if (ytcsi.pt_) {ytcsi.info('pt', Math.floor(ytcsi.pt_));}} catch(e) {}</script><style>.ytp-scalable-icon-shrink {transform: scale(0.8854166666666666) !important; -webkit-transform: scale(0.8854166666666666) !important; -moz-transform: scale(0.8854166666666666) !important; -o-transform: scale(0.8854166666666666) !important; -ms-transform: scale(0.8854166666666666) !important; }.ytp-scalable-icon-grow {transform: translate(-50%, -50%) scale(0.5) !important; -webkit-transform: translate(-50%, -50%) scale(0.5) !important; -moz-transform: translate(-50%, -50%) scale(0.5) !important; -o-transform: translate(-50%, -50%) scale(0.5) !important; -ms-transform: translate(-50%, -50%) scale(0.5) !important; }</style><style type="text/css">#lleo_dialog, #lleo_dialog * {
+    margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none 0 !important;
+	position: static !important;
+	vertical-align: baseline !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+	color: #000 !important;
+	overflow: visible !important;
+	width: auto !important;
+	height: auto !important;
+	float: none !important;
+	visibility: visible !important;
+	text-align: left !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+}
+
+#lleo_dialog iframe {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+#lleo_dialog {
+    position: absolute !important;
+    background: #fff !important;
+    border: solid 1px #ccc !important;
+    padding: 7px 0 0 !important;
+    left: -999px;
+    top: -999px;
+	/*max-width: 450px !important;*/
+    width: 440px !important;
+    overflow: hidden;
+    display: block !important;
+    z-index: 999999999 !important;
+    opacity: 0 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+	border-radius: 3px !important;
+}
+#lleo_dialog.lleo_show {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s !important;
+}
+#lleo_dialog input::-webkit-input-placeholder {
+    color: #aaa !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_word {
+	margin-right: 80px !important;
+}
+#lleo_dialog #lleo_translationsCopntainer1 {
+	position: relative !important;
+}
+#lleo_dialog #lleo_translationsCopntainer2 {
+	padding: 7px 0 0 !important;
+	vertical-align: middle !important;
+}
+#lleo_dialog #lleo_word {
+    color: #000 !important;
+    margin: 0 5px 2px 0 !important;
+    /*float: left !important;*/
+}
+#lleo_dialog .lleo_has_sound #lleo_word {
+    margin-left: 17px !important;
+}
+#lleo_dialog #lleo_text {
+    font-weight: bold !important;
+    color: #d56e00 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+#lleo_dialog #lleo_text.lleo_known {
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+#lleo_dialog #lleo_closeBtn {
+    position: absolute !important;
+    right: 6px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 0 !important;
+    color: #aaa !important;
+    display: block !important;
+    padding: 2px !important;
+	z-index: 9999999999 !important;
+	width: 7px !important;
+	height: 7px !important;
+	padding: 0  !important;
+	margin: 0   !important;
+}
+
+#lleo_dialog #lleo_optionsBtn {
+    position: absolute !important; 
+    right: 1px !important;
+    top: 12px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    color: #aaa !important;
+    padding: 2px !important;
+	display: none;
+}
+#lleo_dialog #lleo_optionsBtn img{
+	width: 12px !important;
+	height: 12px !important;
+}
+#lleo_dialog #lleo_sound {
+    float: left !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 12px !important;
+    background: 0 0 no-repeat !important;
+    cursor: pointer !important;
+    display: none !important;
+}
+#lleo_dialog .lleo_has_sound #lleo_sound {
+    display: block !important;
+}
+#lleo_dialog #lleo_picOuter {
+    position: absolute !important;
+    float: right !important;
+    right: 29px;
+    top: 0;
+    display: none !important;
+    z-index: 9 !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_picOuter {
+    display: block !important;
+}
+#lleo_dialog #lleo_picOuter:hover {
+    z-index: 11 !important;
+}
+#lleo_dialog #lleo_pic,
+#lleo_dialog #lleo_picBig {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    border: solid 2px #fff !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    z-index: 1 !important;
+}
+#lleo_dialog #lleo_pic {
+	position: relative !important;
+    border: none !important;
+	width: 34px !important;
+}
+#lleo_dialog #lleo_picBig {
+    box-shadow: -1px 2px 4px rgba(0,0,0,0.3);
+    z-index: 2 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+#lleo_dialog #lleo_picOuter:hover #lleo_picBig {
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s !important;
+    -webkit-transition-delay: 0.3s !important;
+}
+#lleo_dialog #lleo_transcription {
+    color: #486D85 !important;
+    margin: 0 0 4px 29px !important;
+    color: #aaaaaa !important;
+}
+#lleo_dialog .lleo_no_trans {
+    color: #aaa !important;
+}
+
+
+
+
+
+
+#lleo_dialog .ll-translation-counter {
+	float: right !important;
+    font-size: 11px !important;
+    color: #aaa !important;
+    padding: 2px 2px 1px 10px !important;
+}
+
+#lleo_dialog .ll-translation-text {
+	float: left !important;
+	width: 80% !important;
+}
+
+#lleo_dialog #lleo_trans a {
+    color: #3F669F !important;
+    padding: 1px 4px !important;
+    text-decoration: none !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+
+#lleo_dialog .ll-translation-item {
+	width: 100% !important;
+	float: left !important; 
+	padding:1px 4px;
+	color: #3F669F !important;
+	padding: 3px !important;
+	border: solid 1px white !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+#lleo_dialog .ll-translation-item:hover {
+	border: solid 1px #9FC2C9 !important;
+    background: #EDF4F6 !important;
+	cursor: pointer !important;
+}
+
+#lleo_dialog .ll-translation-marker {
+	margin: 0px 5px 2px 2px !important;
+}
+
+
+
+
+
+#lleo_dialog #lleo_icons {
+    margin: 10px 0 7px !important;
+    color: #aaa !important;
+    line-height: 20px !important;
+    font-size: 11px !important;
+    clear: both !important;
+    padding-left: 16px !important;
+}
+#lleo_icons a {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 0 -2px 3px !important;
+    text-decoration: none !important;
+    background: 0 0 no-repeat !important;
+    opacity: 0.5 !important;
+}
+#lleo_icons a:hover {
+    opacity: 1 !important;
+}
+#lleo_icons a.lleo_google     {background-position:-34px 0 !important;}
+#lleo_icons a.lleo_multitran  {background-position:-64px 0 !important;}
+#lleo_icons a.lleo_lingvo     {background-position:-51px 0 !important; width: 12px !important;}
+#lleo_icons a.lleo_dict       {background-position:-17px 0 !important;}
+#lleo_icons a.lleo_linguee    {background-position:-81px 0 !important;}
+#lleo_icons a.lleo_michaelis  {background-position:-98px 0 !important;}
+
+
+
+
+#lleo_dialog #lleo_contextContainer {
+    margin: 0 !important;
+    padding: 3px 15px 3px 10px !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)) !important;
+    border-bottom: solid 1px #ddd !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    display: none !important;
+    overflow: hidden !important;
+}
+#lleo_dialog .lleo_has_context #lleo_contextContainer {
+    display: block !important;
+}
+#lleo_dialog #lleo_context {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    line-height: 12px !important;
+    font-size: 11px !important;
+    margin-left: 2px !important;
+}
+#lleo_dialog #lleo_context b {
+    line-height: 12px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 11px !important;
+}
+#lleo_dialog #lleo_gBrand {
+    color: #aaa !important;
+    font-size: 10px !important;
+    /*padding-right: 52px !important;*/
+    padding-bottom: 14px !important;
+    margin: -3px 4px 0 4px !important;
+    background: left bottom no-repeat !important;
+    display: inline-block !important;
+    float: right !important;
+}
+#lleo_dialog #lleo_gBrand.hidden {
+    display: none !important;
+}
+#lleo_dialog #lleo_translateContextLink {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ddd)) !important;
+    border: solid 1px !important;
+    box-shadow: 1px 1px 0 #f6f6f6 !important;
+    border-color: #999 #aaa #aaa #999 !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    padding: 0 3px !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    margin: 1px 5px 0 !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+#lleo_dialog #lleo_translateContextLink:hover {
+    background: #f8f8f8 !important;
+}
+
+#lleo_dialog #lleo_setTransForm {
+    display: block !important;
+    margin-top: 3px !important;
+    padding-top: 5px !important;
+    /* Set position and background because the form might be overlapped by an image when no translations */
+    position: relative !important;
+    background: #fff !important;
+    z-index: 10 !important;
+    padding-bottom: 10px !important;
+    padding-left: 16px !important;
+}
+#lleo_dialog .lleo-custom-translation {
+    padding: 4px 5px !important;
+    border: solid 1px #ddd !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    width: 90% !important;
+    min-width: 270px !important;
+    background: -webkit-gradient(linear, 0 0, 0 20, from(#f1f1f1), to(#fff)) !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+}
+#lleo_dialog .lleo-custom-translation:hover {
+    border: solid 1px #aaa !important;
+}
+#lleo_dialog .lleo-custom-translation:focus {
+    background: #FFFEC9 !important;
+}
+
+#lleo_dialog *.hidden {
+    display: none !important;
+}
+
+#lleo_dialog .infinitive{
+    color: #D56E00 !important;
+    text-decoration: none;
+    border-bottom: 1px dotted #D56E00 !important;
+}
+#lleo_dialog .infinitive:hover{
+    border: none !important;
+}
+
+
+#lleo_dialog #lleo_trans{
+    zoom: 1;
+    border-top: 1px solid #eeeeee !important;
+    margin: 10px 0 0 !important;
+    padding: 5px 30px 0 14px !important;
+}
+
+#lleo_dialog .lleo_clearfix {
+	display: block !important;
+	clear: both !important;
+	visibility: hidden !important;
+	height: 0 !important;
+	font-size: 0 !important;
+}
+
+#lleo_dialog #lleo_markBlock {
+    background: #eeeeee !important;
+	cursor: pointer !important; 
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important; 
+}
+
+#lleo_dialog #lleo_markBlock img{
+	width: 14px !important;
+	height: 14px !important;
+}
+
+#lleo_dialog #lleo_markBlock .icon-cell {
+	padding: 5px 2px 5px 16px !important;
+	height: 17px !important;
+}
+
+#lleo_dialog #lleo_markBlock .wide-cell {
+	width: 100% !important;
+}
+
+#lleo_dialog #lleo_markBlock .text-cell {
+	color: #999999 !important; 
+    font: normal 13px Arial, Helvetica !important;
+    text-shadow: 0 1px #fff !important; 
+}
+
+#lleo_dialog #lleo_markBlock td {
+	vertical-align: middle !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+}
+
+
+#lleo_dialog #lleo_picOuter table{
+    width: 44px !important;
+    position: absolute !important;
+    right: 0 !important;
+    vertical-align: middle !important;
+}
+
+#lleo_dialog #lleo_picOuter td{
+    width: 38px !important;
+    height: 38px !important;
+    border: 1px solid #eeeeee !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+#lleo_dialog #lleo_picOuter td div {
+	height: 38px !important;
+	overflow: hidden !important;
+}</style></head>
+
+
+
+  <body id="" class="date-20140508 ru_RU ltr    site-center-aligned site-as-giant-card webkit webkit-537 exp-css-ellipsis" dir="ltr">
+<div id="player" class="full-frame" style="width: 100%; height: 100%; overflow: hidden;"><div class="html5-video-player el-embedded ps-null cued-mode" tabindex="-1" id="player1"><div class="html5-modal-panel html5-stop-propagation" aria-hidden="true" style="display: none;"><div class="html5-modal-panel-clipboard-substitute-content"><input class="html5-modal-panel-input" type="text" readonly="readonly"></div><button class="html5-modal-panel-close-button" type="button" role="button">Закрыть</button></div><div class="html5-video-container"><div class="html5-video-content"></div><div class="ytp-large-play-button html5-center-overlay ytp-scalable-icon-shrink"><svg><path fill-rule="evenodd" clip-rule="evenodd" fill="#1F1F1F" class="ytp-large-play-button-svg" d="M84.15,26.4v6.35c0,2.833-0.15,5.967-0.45,9.4c-0.133,1.7-0.267,3.117-0.4,4.25l-0.15,0.95c-0.167,0.767-0.367,1.517-0.6,2.25c-0.667,2.367-1.533,4.083-2.6,5.15c-1.367,1.4-2.967,2.383-4.8,2.95c-0.633,0.2-1.316,0.333-2.05,0.4c-0.767,0.1-1.3,0.167-1.6,0.2c-4.9,0.367-11.283,0.617-19.15,0.75c-2.434,0.034-4.883,0.067-7.35,0.1h-2.95C38.417,59.117,34.5,59.067,30.3,59c-8.433-0.167-14.05-0.383-16.85-0.65c-0.067-0.033-0.667-0.117-1.8-0.25c-0.9-0.133-1.683-0.283-2.35-0.45c-2.066-0.533-3.783-1.5-5.15-2.9c-1.033-1.067-1.9-2.783-2.6-5.15C1.317,48.867,1.133,48.117,1,47.35L0.8,46.4c-0.133-1.133-0.267-2.55-0.4-4.25C0.133,38.717,0,35.583,0,32.75V26.4c0-2.833,0.133-5.95,0.4-9.35l0.4-4.25c0.167-0.966,0.417-2.05,0.75-3.25c0.7-2.333,1.567-4.033,2.6-5.1c1.367-1.434,2.967-2.434,4.8-3c0.633-0.167,1.333-0.3,2.1-0.4c0.4-0.066,0.917-0.133,1.55-0.2c4.9-0.333,11.283-0.567,19.15-0.7C35.65,0.05,39.083,0,42.05,0L45,0.05c2.467,0,4.933,0.034,7.4,0.1c7.833,0.133,14.2,0.367,19.1,0.7c0.3,0.033,0.833,0.1,1.6,0.2c0.733,0.1,1.417,0.233,2.05,0.4c1.833,0.566,3.434,1.566,4.8,3c1.066,1.066,1.933,2.767,2.6,5.1c0.367,1.2,0.617,2.284,0.75,3.25l0.4,4.25C84,20.45,84.15,23.567,84.15,26.4z M33.3,41.4L56,29.6L33.3,17.75V41.4z"></path><polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="33.3,41.4 33.3,17.75 56,29.6"></polygon></svg></div><canvas width="60" height="60" class="html5-video-loader html5-center-overlay ytp-scalable-icon-grow"></canvas><div class="ytp-thumbnail" style="display: block;"><div class="video-thumbnail" style="background-image: url(https://i1.ytimg.com/vi/KvF_Hruf9tA/sddefault.jpg);"></div></div><div class="html5-bezel html5-center-overlay" aria-hidden="true" style="display: none;"><div></div></div><div class="ytp-dialog-holder" aria-hidden="true" style="display: none;"></div><video class="video-stream html5-main-video" x-webkit-airplay="allow" data-youtube-id="KvF_Hruf9tA"></video></div><div class="html5-video-controls"><div class="ytp-video-controls-clickguard" aria-hidden="true" style="display: none;"></div><div class="ytp-progress-bar-container" style="height: 8px;"><div class="html5-storyboard" aria-hidden="true" style="display: none;"><div class="html5-storyboard-filmstrip"></div><div class="html5-storyboard-lens"><img class="html5-storyboard-lens-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span class="html5-storyboard-lens-timestamp"></span></div></div><div class="html5-progress-bar html5-stop-propagation ytp-force-transform red" style="width: 425px;"><div class="ytp-padding"></div><div class="ytp-progress-list-bg ytp-progress-list html5-draggable"><div class="ytp-unloaded-progress" style="left: 0%; -webkit-transform: scaleX(1);"></div><div class="ytp-play-progress" style="left: 0%; -webkit-transform: scaleX(0);"></div><div class="ytp-load-progress" style="left: 0%; -webkit-transform: scaleX(0);"></div><div class="ytp-spacecast-load-progress"></div><div class="ytp-clip-start-exclude" style="width: 0%;"></div><div class="ytp-clip-end-exclude" style="left: 100%; width: 0%;"></div><div class="html5-ad-progress-list"></div><div class="ytp-marker-crenellation-list"></div></div><div class="ytp-scrubber-pull-indicator" style="left: 8px;"></div><div class="html5-scrubber-button" style="height: 6px; -webkit-transform-origin: 0% 50%; left: 8px;"></div><div class="ytp-progress-list-fg ytp-progress-list html5-draggable"><div class="ytp-marker-progress-list"></div></div></div><div class="ytp-bound-time-left">0:00</div><div class="ytp-bound-time-right">0:00</div><div class="ytp-clip-start html5-clip-marker yt-uix-tooltip" style="left: 0%;"></div><div class="ytp-clip-end html5-clip-marker yt-uix-tooltip" style="left: 100%;"></div><div class="html5-progress-screenreader" aria-live="assertive"></div><div class="ytp-progress-tooltip" aria-hidden="true" style="display: none;"><div class="ytp-progress-tooltip-thumbnail-container"><div class="ytp-progress-tooltip-thumbnail"></div></div><div class="ytp-progress-tooltip-text-container"><div class="ytp-progress-tooltip-text"></div></div><div class="ytp-progress-tooltip-timestamp-container"><div class="ytp-progress-tooltip-timestamp"></div></div><div class="ytp-progress-tooltip-arrow"></div></div></div><div class="html5-player-chrome html5-stop-propagation"><div class="ytp-button ytp-button-play" role="button" tabindex="6000" aria-label="Смотреть"></div><div class="ytp-playlist-controls" aria-hidden="true" style="display: none;"><div class="ytp-button ytp-button-prev" role="button" aria-label="Назад"></div><div class="ytp-button ytp-button-next" role="button" aria-label="Следующее"></div></div><div class="ytp-volume-control"><div class="ytp-button ytp-button-volume" role="button" tabindex="6100" aria-label="отключить звук переключить" data-value="quiet"></div><div class="ytp-volume-panel" role="slider" aria-valuemin="0" aria-valuemax="100" tabindex="6200" aria-valuenow="24" aria-valuetext="24% громкость"><div class="ytp-volume-slider"><div class="ytp-volume-slider-foreground" style="left: 12px;"></div></div></div></div><div class="ytp-time-display html5-control"><span class="ytp-time-current">0:00</span><span class="ytp-time-separator"> / </span><span class="ytp-time-duration">5:19</span><span class="ytp-time-live-badge">Live</span></div><div class="ytp-button ytp-button-fullscreen-enter" role="button" tabindex="6900" aria-label="Полный экран" style="display: inline-block;"></div><div class="ytp-button ytp-size-toggle-large" role="button" aria-label="Большой проигрыватель" tabindex="6800" aria-hidden="true" style="display: none;"></div><div class="ytp-button ytp-button-watch-on-youtube" role="button" aria-label="Смотреть на YouTube.com" tabindex="6700"></div><div class="ytp-button ytp-settings-button" role="button" aria-label="Настройки" tabindex="6600"><div class=""></div></div><div class="ytp-button ytp-button-playlist" role="button" aria-label="Плейлист" tabindex="6400"></div><div class="ytp-button ytp-button-watch-later" role="button" aria-label="Посмотреть позже" tabindex="6300"></div></div><div class="ytp-menu-container html5-stop-propagation" tabindex="-1" aria-hidden="true" style="display: none;"><div class="ytp-menu"><div class="ytp-menu-content"><div class="ytp-menu-row"><div class="ytp-menu-cell">Скорость</div></div><div class="ytp-menu-row"><div class="ytp-menu-cell"><div class="ytp-drop-down" style="min-width: 100px;"><div class="ytp-drop-down-menu" tabindex="-1" aria-hidden="true" style="display: none; bottom: -1px;"><div class="ytp-drop-down-menu-content"><div class="ytp-button ytp-drop-down-menu-button" role="button" tabindex="2500"><div class="ytp-drop-down-menu-button-check"></div>0.25</div><div class="ytp-button ytp-drop-down-menu-button" role="button" tabindex="2500"><div class="ytp-drop-down-menu-button-check"></div>0.5</div><div class="ytp-button ytp-drop-down-menu-button ytp-drop-down-menu-button-selected ytp-drop-down-menu-button-checked" role="button" tabindex="2500"><div class="ytp-drop-down-menu-button-check"></div>Обычная</div><div class="ytp-button ytp-drop-down-menu-button" role="button" tabindex="2500"><div class="ytp-drop-down-menu-button-check"></div>1.5</div><div class="ytp-button ytp-drop-down-menu-button" role="button" tabindex="2500"><div class="ytp-drop-down-menu-button-check"></div>2</div></div></div><div class="ytp-button ytp-drop-down-label" role="button" tabindex="2501"><div class="ytp-drop-down-label-content">Обычная</div><div class="ytp-drop-down-arrow"></div></div></div></div></div></div></div></div></div><div class="html5-video-info-panel"><span class="html5-video-info-panel-close" role="button" title="close">[x]</span><div class="html5-video-info-panel-content"><table class="html5-video-info-table"><tr><th>Video ID:</th><td></td></tr><tr><th>Dimensions:</th><td></td></tr><tr><th>Resolution:</th><td></td></tr><tr><th>Volume:</th><td></td></tr><tr><th>Stream Type:</th><td></td></tr><tr><th>Mime Type:</th><td></td></tr><tr><th>DASH:</th><td></td></tr><tr><th>Protected:</th><td></td></tr><tr><th>Bandwidth:</th><td><span><span><span></span></span></span><span></span></td></tr></table><table class="html5-video-info-table html5-video-element-info-table"><tr><th>Decoded Frames</th><th>Dropped Frames</th><th>Parsed Frames</th><th>Presented Frames</th></tr><tr><td></td><td></td><td></td><td></td></tr><tr><th>Video Bytes Decoded</th><th>Audio Bytes Decoded</th><th>Painted Frames</th><th>Paint Delay</th></tr><tr><td></td><td></td><td></td><td></td></tr></table></div></div><img class="html5-watermark html5-stop-propagation ytp-scalable-icon-shrink hid" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Водяной знак"><div class="html5-info-bar html5-stop-propagation"><div class="html5-title"><div class="ytp-button html5-title-text" role="button" tabindex="3100" aria-label="Through the Looking Glass: The Tech Behind Alice">Through the Looking Glass: The Tech Behind Alice</div><div class="ytp-action-buttons"><div class="ytp-button ytp-button-info" role="button" aria-label="Подробнее…" tabindex="3500"></div><div class="ytp-button ytp-button-share" role="button" aria-label="поделиться" tabindex="3400"></div><div class="ytp-button ytp-button-dislike" role="button" aria-label="Не нравится" tabindex="3300" data-tooltip-below="1" aria-pressed="false" style="display: inline-block;"></div><div class="ytp-button ytp-button-like" role="button" aria-label="Нравится" tabindex="3200" data-tooltip-below="1" aria-pressed="false" style="display: inline-block;"></div></div></div><div class="html5-info-panel"><div class="html5-info-panel-loading-icon"></div><div class="html5-info-panel-content hid"><div><div class="html5-author-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></div><div class="html5-author-info"><div class="html5-author-name"></div></div><div class="html5-subscribe-button-container"></div></div><div><div class="html5-video-info"><div class="html5-view-count"></div></div><p class="html5-description-text" dir="auto"></p></div></div></div><div class="share-bar"></div></div></div></div><div id="player-unavailable" class="ytp-error hid"><div id="unavailable-submessage" class="ytp-error-content"></div></div>  <div id="html5-player-messages" style="display:none"><div id="HTML5_NO_AVAILABLE_FORMATS_FALLBACK">Ваш браузер не распознает доступные форматы видео.<br><a href="https://www.youtube.com/html5">Нажмите здесь, чтобы ознакомиться с часто задаваемыми вопросами о видео HTML5.</a></div>
+    <div id="FLASH_FALLBACK">Для воспроизведения видео требуется проигрыватель Adobe Flash.<br> <a href="http://get.adobe.com/flashplayer/">Загрузить последнюю версию</a></div>
+
+    <div id="YTP_AD_RESUME_MESSAGE">Показ видео будет возобновлен после рекламы.</div>
+    <div id="VISIT_ADVERTISERS_SITE">Посетить сайт рекламодателя</div>
+
+    <div id="YTP_SUBTITLES_FONT_FAMILY_MONO_SERIF">Моноширинный с засечками</div>
+    <div id="YTP_SUBTITLES_FONT_FAMILY_PROP_SERIF">Пропорциональный с засечками</div>
+    <div id="YTP_SUBTITLES_FONT_FAMILY_MONO_SANS">Моноширинный без засечек</div>
+    <div id="YTP_SUBTITLES_FONT_FAMILY_PROP_SANS">Пропорциональный без засечек</div>
+    <div id="YTP_SUBTITLES_FONT_FAMILY_CASUAL">Casual</div>
+    <div id="YTP_SUBTITLES_FONT_FAMILY_CURSIVE">Cursive</div>
+    <div id="YTP_SUBTITLES_FONT_FAMILY_SMALL_CAPS">Small Capitals</div>
+
+    <div id="FRESCA_STARTING_SOON_MESSAGE">Скоро начнется...</div>
+    <div id="FRESCA_EVENT_OVER_MESSAGE">Трансляция закончена.</div>
+    <div id="FRESCA_COMPLETE_MESSAGE">Благодарим за просмотр!</div>
+    <div id="FRESCA_STAND_BY_MESSAGE">Пожалуйста, подождите.</div>
+    <div id="FRESCA_TECHNICAL_DIFFICULTIES_MESSAGE">К сожалению, у нас возникли технические проблемы.</div></div>
+  <script src="www-embed-player-vflZJOdax.js" name="www-embed-player"></script>
+  <script src="html5player-ru_RU-vflPJfonc.js" name="html5player"></script>
+<script>yt.setConfig({'EVENT_ID': "8iNuU8__C8PuwAP37oDICw",'VIDEO_ID': "KvF_Hruf9tA",'ENABLE_CAST_API': true,'POST_MESSAGE_ORIGIN': "*",'BG_P': "kN97471Fpsa+XVpt5f7BpEymm9jVIjgNxFR1Ai4QDMHoHtG3DEQGeTkWGwvjY4xeyBM4+Zthx2XUyL4njtRFJR80S\/J8BaKRz\/v+Zkgj5+e5UVbXZkfOtyEBK1SAwezXd+Lp3qaTD3QFRlTqkAp53pDgP10yYXLgNa7rwsdSgjBlVIqp7OApz4b\/hBF4k3\/lYV7Mx\/ac+q0MDeH7MZ4YHv5qG+wW9341iHqDDe\/yNhnBl9bq3TbdMBdh9tA8P1J2CafybHzwquuWUlLfF3\/u2RGEmaDqKUArj\/0yQNDqSxQwdq54HeEj9ZjZixc538\/RmdfLcgUn8TbCAMR2p+j9Nu3VBlq\/\/XJGS8EbdLOVsWacFhMeb7SIPO9w+J\/o7+dhE\/WKWLU\/6\/fgAxxRDC9oteF1TQ8k1osGsL7BRl+GNWyPbzCWYYn8cMaVt0gZXVAFgtoOO9RrvjQ3FHB14+1xevf61T8SFHcauajIeaXqZ1eUNdmeQs+qvQUTUqrCWe\/0rmWxQblMOx+NJKx3Z53OA6dJKO45mFmzxb3agYqiy\/\/hnpmxf4WQJnNcuVHsydhKRyYBzQRyW8mfJzR82ztVDXJbxEyLwQ3jcKuCrZJhe8zKK7sa58OjB8laCq1ZV0z4cdO\/gZMPXQNyKsSPVuVkeP8otMMO+wtH8UQFQ+lrxVaWcEkN+RNsj8s9s9w+bbnxClx+9OKX7p+EQTIWGwHOg3Zc878Wfk5DrnicGtVy9OzXV8u7Jo28NIyfbvBfuH5Lr8VzTBBCV1TvOJC7F5lI7iFQEgFGdyTYGdRDQtYjC\/mWJrvWdRYJigP4KyYzVRQAPB4hv+nADyK2znppv6qiaEP0NYnZdlfYbTQY\/\/8C8Dw5CIMW\/Q9wuNnC8WDMv\/qXNCVhucNhW63JePZX6rq5ObgGDbbSS5Wesaoqc32jEMLPiFyLFFF3VTvpQGT3IRjwkq7tzSG3OMnl9QNNjwXv3RBcULXVbhZjARS1XayQFoL7\/crKY3tVukR2Wz9L8wEWaSG43nJ78EvIT2ppEKJPC7u8xQl4WJYSvn9IiFYdM0vDk\/8w1q6DXalQ1PMvCXtWmRsT3mU7HtN07MUJAa12KgK76ai8nCeBOtp+EKsdo0fZZbc+VnmfHWikDIsn1U+UumN470WgZcT0n7\/kXyrB43sbRjoc1SdyNnQuU\/+AYsYDdZBtOpKhIXebqBbvMlfKil+ILpJ5+5gSkErJb95rfQ24UE3lcrn6+5AKsZH+ENaNx7Ow968rqxML5e9QyH0EVhCE4tXyjS4BoJqFy80cEd0\/vfpapoQsNpcKL9hvxohxTGHoxo7MFaeCRs1v7IDmWxSrP59Q\/ms+EaDXCHKMn3IUTTSdCyE+Vn2ihcoKKbQlRbb7U3vQoVunwRv1wNyh\/DatX5ymjPMlaE+KY3KB7Un0SainbxA4uPC\/TDLEgW6XIs7NKqA99\/QD92nignp5g2hPPyhkffg3CQ9XX1KU08+fLD9BqPnlmHOQAFuXQQmV3IyR5y9kvC0mmwDwgWiTGO4hq8ZaMW63gG71pYmvVJgMvacvl7I6g2bOEM988DdVna4vMDCqRyp9YGx4aBVphDd\/LFKtmmoKvlT1W63DYwOwmkOKDkOeqwQeQaCSarAKR+sQnGhJEzqb\/sOwj209Ak2dpd7vy4CF9zCI\/rToSsRrokRY39rLjFPT3fk9xwdlQwcJWaaiDJS3S7+SyY+pXUlPaMZNdOzg4ZuUW2ce1\/K+JMdndmIBcct1ZYFvik+wy41YWgjjSbUYeAtcXsKs4+egfOpRgUqLa5Dg87xf\/+Nf0DB0bB5xlrr5\/fMkccmVAKh8jARlu3U7Hp\/1OrDM1iQ2oFF\/efw3t8aNK\/ZCAJaVGsHO8SZCmJ16t3cD0QIP1rCsZqrqXnOhPBrhj7qn1\/Mt7f9J2mb6FrogTz0ireNmUepF2K0J9ZFtuUg49EJbIhOGAEFd\/\/ayw2TimUIrPbg525c02v5OoOtmOpSoMP+atNstc1JC1Cf4r\/tVcq7SQy2TU6A6C9XzT5DqrV9b+xZczseUKMi+dkv28+JI3fVwq9Sry0d9v8bKg7Qce4J72LWx\/taWvjlyoppAty0MMEakFOx9RwiHko2JnIctirko8kIjHRnh0bYp\/t1eo0xUF\/nzKss73iXAQL3\/KsxWrU5Uqit6r2jr6OTwH6wZcMT2RZllPFYf0Scol\/1A34xeDcncR0G9Sytva+Wt5kWcz2jnasXtvoqmyIGXNlBx8lBsX7r5fAjdvHlRsU+\/xn9xwZTzWKjpRatkJ60MqUT\/8PK0SZU0vJAI+yXDb0+y50fa2T+EkBwhB9y3fUYLwAq\/vAt2ettMjnl7FbQTT3KLFo\/fFiDErer2e0tDSd9a7QUfYeeWZAWtEWvek2Yvf9qfH0VIGrj4dUVuUGLD+4DPN89TnZhYvsR4sRKK8Z\/ujmEy99DnjLxyFFkdpQ54n1FVKLCuEmcKylrID9GKosneIzlKcCTk7IqyJTpL4oeS1M35jpQv572gSJhHPVVCTifseNRLd\/gC4nf9bjPxATVgy3QrKGuhhR7foJDLmLeO\/a3Xpa0XeaiN3vstOOQvUY98LAhL+4n5hodDy2r6deo0tyANahVz5BJk7wmI2zuBcVhe6bS6QOPyfhDGkUcZNxXkImyiZu8KoCsW2+XvrmH6T2bbNo3qsHuG6a+wyskO2jNAkC885DOlwc4+bT7G5gqDIc3zcbYqtJbcsbT7Dqy3YnvJqSd5UbgPKp2zIZuV0ubhPUHnskIuiGYCHbZ8a7fdzMKHQllxTxkf\/nk0bZ9Z5fz6fbqdYR72FOuRjD1RTAtA7Umcc9Eci2fnmF0i5dXF3oE26KjnyUEA9w35Vjg040eBe0H+fnqoxNKDE0TwmvSPR0AXTfl61iCiXhAzwjHemrSf850hM6dx3NhKaozWngy88sQRs0s8hUIPakMiTW6F59uSOqm+Xv2ZPVZV3f7lS4G012lgyVIWf+hCjyce9UHzxS59emHVHVzSauxFjicJkUWg4dWdW+HsUj610a8aXBUkcCuTYtM7Pd6JBs+6Umlruc8fNhi60xLGyt4E5dgP92pFXAy4bFtnBRN\/APuTTtj4vVagjAIMUnEIK7C4CyfKTy0i7nbvofG87yFp5nZ4rcnw7dPRQ5e91JNXWDgAbCPX8ojfMlL5TRUiYZUbNOJMufZ\/ZPh4UaOyK\/20VajhDDD8mVGSfa7JSAaO2fvo4sdRRDkdEPjK4e6K\/uYB2nE4H7kHvaRrQJngKhB+mNuz+j44P8GTQb5LCsPpzZEwyH3IwKMU\/sYQR+XDb178LZyv0RC5VUQWSRZlq98EKcY1IuAsmeQeGy\/Xo3HuQUZsaDCXe3DiZk2u9bqyQxoWiQwdXQMgQHtQBcvkWZEa2k0\/40DtIDgHCCPOKtIuO1aW8TShpAY3m2o0JTBYsFBhsKp1FlGokaurAzlUxQObBXMc9erncH4BaArd8jBekZqVI6TWAWscyPd6fZ0f\/kAArQVVmwLCwpQ356icqCEktSM\/nI7NmXP7llno\/5tKLzghLMSPIdf8x3EEOaW2CNK2BUusFNDfcIb9bve94i0VZetRIQzYXT3GH32CakzhheRYpKBtL06S5\/Mg2+ZXWIbZJjdAWWdoyld6afBZHuJKFuYzjwSuNmxdZE226c0IREt\/bKi3OMN0jSp+C7VppK91bhIz+PIAybltB2VJM\/JOnNed0GZpvxnnzi6PLbbDgvDS+q2ypjOdTTqaXJSiLQ54h6UbbziS5T2QTQ\/XDC8e43E06KBuyRGFSAGFMsR34v9olxn+NSN7W7rTSQ\/8l9X\/UpubVYc83ASHWIncm4dY\/UgDIBLiElBK\/f1BiRR1MQemRgo2Vk8hnV6Jkr\/rnhLgRahtLS6AsC6kEueVt+2K\/HRgS+Ai525mJQTQtUgXnww3nlS4gaT9OJPEpXbHq+gExfPSN1uquJ10cNPTwsBR2pQ\/xj9yijuy7BsXpjvi6tk7u2EOzn7YzHGQ9z0s7u+B5ex5uWJG27bYtZ8mk7sSoz53Y0HXzBXk6eYOumeAUD0Wj+H5PAHTudEBY0uQQNMsxXuCaaiuELMMl7onnDLcXnobYST+uIFutUAEcw1aYyYZ4ryRQ0LsZEFAvuZz3pI4BRzs2dVaFXq+W+M8mC3tWzSYe61mzlmgAhMmhz4FkZcgvH1vHcYHgFAZe9VcFU1oggWZQWRdKXnSBmpAbuBhIuG+NkaGK1DbjDzmY0lE225\/\/XCt2bPYUZyGUzf2T+ccm2bbv8t4srRLRZa3CmglD8mWCZBMGidujghrZeqMVQQqCvbSvKbK99ahahhHppUHLDqTRIfHS1HBDPlfXPNH5A1bOClsbouMBvHmeMFLHFwLBEeXF7MfGXSjA9eIUVgE\/G0aSDxQ10gCi2\/t5E0AS52RUYKc1cxk6\/8vCSdl0TO2c3ZD4gdZI9NjCaiztgsNlrZ8HVkK9EKUFKITNcgQ039p0cXenD7NqmVmLNWTSPsamztcSobFmzbNBXoihuB1swelEM\/hDyKrbvHNV1OYGjaQdRw5PIfVo9y39nFQV71qSlMQcgsEG68gOardAF2D\/FjtoBTPSGD7epimjSzPAIP\/RRzn3L3Qme+wiPaK5NQa5jlYyz2jZrRypJ\/DEdbmQL\/+SjZivyA0yyIxLjEw1LeVYLwZZywrmNwSdUuVG230dvFSocFde7Rh+iZBe9rQ14xiLh+tnNkCXHDaPF+JO0BemSmyBgNzt68H0d05JxXigQm9bYDItuzzzJk\/uIzxzkkwhH\/kzqU1PJUPuNKUjBu76rbF0OvHB7uYA8tLS3rQFGDG6U9FtHj0iORCBsCRCMiYlEPY1AJ7Z2U6HUmt8ImcboYz\/H8G7kGYjQifU1TqExBa2gLDAt6R6c746DCu3IFP1UEP+SEbaX+A\/mS1JSBtG5mNpCX5pI9sY2kWDtDYpxhfiVX43ON1gN2xvlGiMyCDUrcGzBXFsjdcUa02eiJMdpVBgQ0nbQemrpkK16kgstG6QzDXlZz3cT+x0p2NTUw9bzrDOwOQns8xTSGY2t\/MIdZxGroa0qQSjU3l9LWegThzru\/UG6XhwCvscNBloZQdAuaK4ltWkxeArX3aRF8pEzT86woI+r1NgoKloJfzZXkgbEN4k9xeAEFQ1\/PaVz02dxInVefddQV8cqg2cCUH+tYxFZjf8lkNSxcSnxFYgS4lSDzXJImeGdphbUzVJYkTp0ssreWqGCY38kYs6uFlYPyOxbJjlKxHGIUsdKiEi8ESMjaezGaURIzi0uV+FYjGWKwGGU5GYogQ+wJTMCIqtea9K7GGghZ98Ty7Qz5Fr8kihoU9n1CqP+hw7+Kq5MLi2DKXgDlfNg7rO\/SAYitTiY\/X3fa4JC+BE4ReCcZKyzHodWHJr35re8SibM1s9pLDbPoJZAzuVxLPQy3fg9q5AARag9Bs\/+LQYkFCTt46bnFvHUVot+RccHK75\/lBNhpm30d1U+BOhhYDxogXSdOmVh1aqI3e1V00b\/dYNaEHGIvWTIXnYZDFCxSAtEkFH8BMQKEBg8gwPa68UGxHA+cp4qK8PY\/awFV8pGI1Y0slKQ886NmYn3uczKc\/4nkYRONehEo9fjzLHB3ac7UGUKfoJqjVIhu3Rv8d7tXm0seizS1xcuyFmzF+9+h4T1fM9C7NPLLF444fwDuaivRpFyeePMf\/owuPw+BoXM7b6nHzdm9zc67VThjQu90DV0rUcZwvbtWWhMhpNNSp\/V3UNQ+P2KUMRs7cwQtMPddXhEByBg2C1KrBF9eLfRsnPKsk2++yy2clyRGvH+upiO0uES1QBAf406HfUSm5npHbHQiKHbsAigPfLCw3uxsCGGv93qcprVup9shdsFQHXCwqDyyY0XfHfqMsqTWcofd9Y2qfl5TlERQ4xHJmcybNteRN75Z1USzGwn0gIWL7czD\/PEuBx+IPM0zPlHsZfRNa6Tj8qGX62y\/UiMr52z+91nnJMurwmCT6YZqvW3vBZLfFnBC0WYjx9i\/wrGzImO6l3l50oqTffop6NE\/L5QxK\/8nin6J6tbDF8nm8ZbK8yHOnJ1WmOUtTT0kWjDyPvErCmisq18ywfCxtHaLOOASRuW9Md7xhoqru+WXzblx+dHNCXOH+8Jvbu3sGYGYlugxcjhqU4c0H4AJLDa2E62K3ZgjL7UrKCMbGvvZ8FOv1hIx7NDXyy4BS3ISBY\/BvmamYnyHJ41ZOU4M\/KfVN1WssMltUKSRmD5y7TAxOgtr7U2PcFg5TLIyklKi+1cPW7KJX9MaoPt25q6cvkuzFyJTLFHxoGWHy2qlERwASTPzJKFKKQG\/sQmv2IS\/HPmb3+KmElN4eJEdu1QAetWReTh49HoHsdVcVJlvRfAdnykbEvr\/scofHAs\/QQTIo+zKiJbuM2phm8lLdE0h9mOJgsmayy7CcQWjp\/y17FxMqHoDxzE5EEiFMP0c583X9JtjIp6EPqty4rMYEdEakqAZclG697n6WW9QHNULmYkrYAvKhCcOby0yhfJjX5k9S6sc3vLy3WWkGDvdLznGf7c5atz8TD3R6IExRF5Cj7LLyJuJg1etWw+ot323VRXedAA1MkquuiREKoROHcaN0UWmnjY+TYm\/roUYttBev0U2GqvIqTVpWMl8iHEEAtHCSyfWS9XxGs6w\/9jdGhwN9lXmYk6kQsHiEbyeenjPiLUH14OyBr0IFslb+KVV8qRZO3Kbo+4WNV8ruOdJnzXKMQFez1dO0DPI3lCOp+UGJCXfA4nZe27ZauDbYdbQQfAaOeu9FCSmj2fE8cqmTboMYZUKUKLcsc2S+q90eJvqp\/6hARYgDubXrVvryUK1M8G6m3wIW76+QVxIe2rNf5XioyDS03fpkWom9kar8t3QS+xSOHNjY0TLH8MjupMY\/C9Rjhq6zCNRZk+Fe0os16gZGnbVo3ADS44t4a2NGTQmfhhnLU+eFp7hodvBj8JMr0yQFwznOUjnLvanrkaky+Dw8MuxOhmUmiXz3bOlN0VTDjEMl0v6Dlbf2J8dsmIg+aQzL+Rqeg0Ey\/zmVXZVXRlDDqy1v2CwcWDwS4oLPi6VewLKXIQi0fu1Szf1EFAWse2DrY3z7UY9catOz4qIdABSK\/3OwQ0U+AmAFWl2aQNmcPHVLOQZKuwZD7zafZoJIgGiXA+8+j9LEE8+Ui3LEaAgXoQsxk2MRiDcY4Cyx91PpATpYOZ\/a4v56u7BKN+A\/1h8admzdildaEBbAwIzPFDCd+ANdFYETF2MVcs96ZZcHbHd+pzy4ZPk7tF6HQVdhfL\/2zKkHLMXnFfP8gERSlblhaGcOQTJcfZqERtoN1SE09y6R\/wbl8dBwiDp4LYiAzHwQgOdik36Qa4B08iSccr1UuugPo4e10a8aACo=",'BG_IU': "\/\/www.google.com\/js\/bg\/p9NP-eAlPFnIwCXQTIVv825QGiGzgBLP56m5NwS9QPk.js",'EURL': "https:\/\/sites.google.com\/site\/cgfit0201\/task_tvset"});  yt.setConfig({
+      'PLAYER_CONFIG': {"min_version": "8.0.0", "html5": true, "attrs": {"width": "100%", "height": "100%", "id": "video-player"}, "assets": {"html": "\/html5_player_template", "js": "\/\/s.ytimg.com\/yts\/jsbin\/html5player-ru_RU-vflPJfonc.js", "css": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-webp-vfldAyEdp.css"}, "params": {"allowscriptaccess": "always", "bgcolor": "#000000", "wmode": "opaque", "allowfullscreen": "true"}, "url_v8": "https:\/\/s.ytimg.com\/yts\/swfbin\/player-vflTjIhAo\/cps.swf", "url_v9as2": "https:\/\/s.ytimg.com\/yts\/swfbin\/player-vflTjIhAo\/cps.swf", "args": {"eurl": "https:\/\/sites.google.com\/site\/cgfit0201\/task_tvset", "iurlmaxres": "https:\/\/i1.ytimg.com\/vi\/KvF_Hruf9tA\/maxresdefault.jpg", "allow_embed": 1, "el": "embedded", "watch_xlb": "https:\/\/s.ytimg.com\/yts\/xlbbin\/watch-strings-ru_RU-vflDFQAw6.xlb", "hl": "ru_RU", "index": 0, "enablejsapi": 1, "rel": "0", "allow_ratings": 1, "avg_rating": 4.91463414634, "sendtmp": "1", "ssl": "1", "sentiment": 2, "adformat": null, "is_html5_mobile_device": false, "authuser": 0, "cr": "RU", "length_seconds": 319, "view_count": 18334, "iurl": "https:\/\/i1.ytimg.com\/vi\/KvF_Hruf9tA\/hqdefault.jpg", "title": "Through the Looking Glass: The Tech Behind Alice", "iurlsd": "https:\/\/i1.ytimg.com\/vi\/KvF_Hruf9tA\/sddefault.jpg", "probably_logged_in": "1", "video_id": "KvF_Hruf9tA", "fexp": "944400,937417,913434,923341,936923,945044,3300016,3300106,3300130,3300137,3300161,3310366,3310626,3310649", "idpj": "-5", "ldpj": "-19"}, "url": "https:\/\/s.ytimg.com\/yts\/swfbin\/player-vflTjIhAo\/watch_as3.swf", "sts": 16196},
+    'EMBED_HTML_TEMPLATE': "\u003ciframe width=\"__width__\" height=\"__height__\" src=\"__url__\" frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e",
+    'EMBED_HTML_URL': "\/\/www.youtube.com\/embed\/__videoid__"
+  });
+    yt.setMsg('FLASH_UPGRADE', "\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e  \u003cdiv class=\"yt-alert-icon\"\u003e\n    \u003cimg s\u0072c=\"https:\/\/s.ytimg.com\/yts\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"\u0417\u043d\u0430\u0447\u043e\u043a \u043e\u043f\u043e\u0432\u0435\u0449\u0435\u043d\u0438\u044f\"\u003e\n  \u003c\/div\u003e\n\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\" role=\"alert\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n            \u041e\u0431\u043d\u043e\u0432\u0438\u0442\u0435 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Adobe Flash Player, \u0447\u0442\u043e\u0431\u044b \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u044d\u0442\u043e \u0432\u0438\u0434\u0435\u043e. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003e\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0441 \u0441\u0430\u0439\u0442\u0430 Adobe\u003c\/a\u003e.\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e");
+  yt.setMsg('PLAYER_FALLBACK', "\u0414\u043b\u044f \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u0432\u0438\u0434\u0435\u043e \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0441 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u043e\u0439 HTML5 \u0438\u043b\u0438 Adobe Flash. \u003cbr\u003e\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u0432\u0435\u0440\u0441\u0438\u044e \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044f Flash\u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003e. \u003c\/a\u003e \u003cbr\u003e \u003ca href=\"\/html5\"\u003e\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435\u003c\/a\u003e \u043e \u043f\u0435\u0440\u0435\u0445\u043e\u0434\u0435 \u043d\u0430 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0441 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u043e\u0439 HTML5...");
+  yt.setMsg('QUICKTIME_FALLBACK', "\u0414\u043b\u044f \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u0432\u0438\u0434\u0435\u043e \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c Adobe Flash Player \u0438\u043b\u0438 QuickTime. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003e\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u0432\u0435\u0440\u0441\u0438\u044e Flash Player\u003c\/a\u003e \u003cbr\u003e\u003ca href=\"http:\/\/www.apple.com\/quicktime\/download\/\"\u003e\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u0432\u0435\u0440\u0441\u0438\u044e QuickTime\u003c\/a\u003e");
+
+writeEmbed();</script><script>ytcsi.span('st', 31);yt.setConfig({'TIMING_ACTION': "",'TIMING_INFO': {"yt_spf": 0, "yt_li": 1, "e": "944400,937417,913434,923341,936923,945044,3300016,3300106,3300130,3300137,3300161,3310366,3310626,3310649", "yt_lt": "cold", "ei": "8iNuU8__C8PuwAP37oDICw"}});<script></body></html></script><ul class="html5-context-menu yt-uix-button-menu" aria-hidden="true" style="display: none;"><li><span class="yt-uix-button-menu-item html5-context-menu-copy-video-url">Копировать URL видео</span></li><li><span class="yt-uix-button-menu-item html5-context-menu-copy-video-url-at-current-time">Копировать URL видео с привязкой ко времени</span></li><li><span class="yt-uix-button-menu-item html5-context-menu-copy-embed-html">Копировать HTML-код</span></li><li><span class="yt-uix-button-menu-item html5-context-menu-report-playback-issue">Сообщить о проблеме воспроизведения</span></li><li><span class="yt-uix-button-menu-item html5-context-menu-copy-debug-info">Скопировать данные для отладки</span></li><li><span class="yt-uix-button-menu-item html5-context-menu-show-video-info">Статистика для сисадминов</span></li><li><a class="yt-uix-button-menu-item html5-context-menu-link" target="_blank" href="https://www.youtube.com/html5">О проигрывателе HTML5</a></li></ul></body></html>
